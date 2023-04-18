@@ -1,1 +1,1 @@
-# swipeNdecide
+# swipe&decide application
