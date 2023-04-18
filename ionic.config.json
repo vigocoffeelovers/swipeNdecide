@@ -1,0 +1,7 @@
+{
+  "name": "swipe-n-decide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
