@@ -1,0 +1,51 @@
+.app-swiper-card {
+    position: relative;
+    height: 100%;
+
+    ion-card {
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .app-card-info {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 6rem;
+
+        .app-swiper-card-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--ion-color-light);
+            }
+        }
+
+        .app-tags {
+            display: flex;
+            flex-wrap: wrap;
+
+            ion-chip {
+                --background: var(--ion-color-dark);
+                --color: var(--ion-color-light);
+            }
+        }
+    }
+}

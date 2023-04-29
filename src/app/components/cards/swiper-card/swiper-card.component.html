@@ -1,0 +1,17 @@
+<div class="swiper-card-container">
+  <div class="app-swiper-card">
+    <ion-card>
+      <img [src]="imageSrc" alt="card image" />
+      <div class="app-card-info">
+        <div class="app-swiper-card-title">
+          <span>{{title}}</span>
+        </div>
+        <div class="app-tags">
+          <ion-chip *ngFor="let tag of tags">
+            <ion-label>{{tag}}</ion-label>
+          </ion-chip>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</div>

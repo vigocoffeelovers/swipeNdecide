@@ -1,0 +1,13 @@
+ion-content {
+    --background: var(--ion-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen-card {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
