@@ -1,0 +1,13 @@
+<ion-content>
+  <ion-list>
+    <app-topic-list-card
+            *ngFor="let topic of topics"
+            [title]="topic"
+            [imageSrc]="'assets/images/default-card-image.png'"
+            (swipeStart)="onSwipeStart($event)">
+    </app-topic-list-card>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

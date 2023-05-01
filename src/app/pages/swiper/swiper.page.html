@@ -1,29 +1,30 @@
 <ion-content>
-
     <div class="full-screen-card">
-        <swiper-container events-prefix="swiper-">
-            <swiper-slide>
-                <app-swiper-card
-                [imageSrc]="'assets/images/default-card-image.png'"
-                [title]="'Opción 1'"
-                [tags]="['tag1', 'tag2', 'tag3']">
-                </app-swiper-card>
-            </swiper-slide>
-            <swiper-slide>
-                <app-swiper-card
-                [imageSrc]="'assets/images/default-card-image.png'"
-                [title]="'Opción 2'"
-                [tags]="['tag1', 'tag2', 'tag3']">
-                </app-swiper-card>
-            </swiper-slide>
-            <swiper-slide>
-                <app-swiper-card
-                [imageSrc]="'assets/images/default-card-image.png'"
-                [title]="'Opción 3'"
-                [tags]="['tag1', 'tag2', 'tag3']">
-                </app-swiper-card>
-            </swiper-slide>
+        <swiper-container
+            events-prefix="swiper-"
+            grab-cursor="true"
+        >
+        <swiper-slide>
+            <app-swiper-card
+                    [imageSrc]="'assets/images/default-card-image.png'"
+                    [title]="'Opción 1'"
+                    [tags]="['tag1', 'tag2', 'tag3']">
+            </app-swiper-card>
+        </swiper-slide>
+        <swiper-slide>
+            <app-swiper-card
+                    [imageSrc]="'assets/images/default-card-image.png'"
+                    [title]="'Opción 2'"
+                    [tags]="['tag1', 'tag2', 'tag3']">
+            </app-swiper-card>
+        </swiper-slide>
+        <swiper-slide>
+            <app-swiper-card
+                    [imageSrc]="'assets/images/default-card-image.png'"
+                    [title]="'Opción 3'"
+                    [tags]="['tag1', 'tag2', 'tag3']">
+            </app-swiper-card>
+        </swiper-slide>
         </swiper-container>
-
     </div>
 </ion-content>

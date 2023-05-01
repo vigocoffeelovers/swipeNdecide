@@ -2,7 +2,6 @@ import {AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { CardsComponentsModule } from "../../components/components.module";
-import { Swiper } from 'swiper';
 import { register } from 'swiper/element/bundle';
 register();
 

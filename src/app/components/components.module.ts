@@ -4,18 +4,21 @@ import { IonicModule } from '@ionic/angular';
 
 /* CARDS MODULE */
 import { SwiperCardComponent } from "./cards/swiper-card/swiper-card.component";
+import { TopicListCardComponent } from "./cards/topic-list-card/topic-list-card.component";
 
 @NgModule({
-  declarations: [
-    SwiperCardComponent
-  ],
-  exports: [
-    SwiperCardComponent
-  ],
-  imports: [
-    CommonModule,
-    IonicModule,
-  ]
+    declarations: [
+        SwiperCardComponent,
+        TopicListCardComponent,
+    ],
+    exports: [
+        SwiperCardComponent,
+        TopicListCardComponent,
+    ],
+    imports: [
+        CommonModule,
+        IonicModule,
+    ]
 })
 export class CardsComponentsModule { }
 
@@ -23,13 +26,13 @@ export class CardsComponentsModule { }
 /* CONTAINERS MODULE */
 
 @NgModule({
-  declarations: [
-  ],
-  exports: [
-  ],
-  imports: [
-    CommonModule,
-    IonicModule,
-  ]
+    declarations: [
+    ],
+    exports: [
+    ],
+    imports: [
+        CommonModule,
+        IonicModule,
+    ]
 })
 export class ContainersComponentsModule { }

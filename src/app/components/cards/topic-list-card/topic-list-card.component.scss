@@ -1,0 +1,34 @@
+* :not(ion-item-sliding) {
+    pointer-events: none;  // disable all pointer events except the sliding
+}
+
+ion-item {
+    --padding-start: 0;
+
+    ion-label {
+        text-align: center;
+    }
+}
+
+ion-item-options {
+    background-color: green;
+
+    ion-item-option {
+        --background: none;
+    }
+}
+
+ion-thumbnail {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    img {
+        width: 120%;
+        height: 120%;
+        object-fit: cover;
+        border-radius: 0 30% 30% 0;
+    }
+}
