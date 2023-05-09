@@ -4,7 +4,7 @@
             *ngFor="let topic of topics"
             [title]="topic"
             [imageSrc]="'assets/images/default-card-image.png'"
-            (swipeStart)="onSwipeStart($event)">
+            (swipe)="onSwipe($event)">
     </app-topic-list-card>
   </ion-list>
   <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">

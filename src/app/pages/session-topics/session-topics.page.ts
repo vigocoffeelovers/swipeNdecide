@@ -34,7 +34,7 @@ export class SessionTopicsPage implements OnInit {
         }, 500);
     }
 
-    onSwipeStart(event: any) {
+    onSwipe(event: any) {
         console.log('onSwipeStart');
     }
 
