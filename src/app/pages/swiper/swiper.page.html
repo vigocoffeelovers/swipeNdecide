@@ -3,28 +3,25 @@
         <swiper-container
             events-prefix="swiper-"
             grab-cursor="true"
-        >
-        <swiper-slide>
-            <app-swiper-card
-                    [imageSrc]="'assets/images/default-card-image.png'"
-                    [title]="'Opción 1'"
-                    [tags]="['tag1', 'tag2', 'tag3']">
-            </app-swiper-card>
-        </swiper-slide>
-        <swiper-slide>
-            <app-swiper-card
-                    [imageSrc]="'assets/images/default-card-image.png'"
-                    [title]="'Opción 2'"
-                    [tags]="['tag1', 'tag2', 'tag3']">
-            </app-swiper-card>
-        </swiper-slide>
-        <swiper-slide>
-            <app-swiper-card
-                    [imageSrc]="'assets/images/default-card-image.png'"
-                    [title]="'Opción 3'"
-                    [tags]="['tag1', 'tag2', 'tag3']">
-            </app-swiper-card>
-        </swiper-slide>
+            slides-per-view="1"
+            initial-slide="2"
+            effect="cards"
+            [cards-effect]="{
+                perSlideOffset: 8,
+                perSlideRotate: 0,
+                rotate: true,
+                slideShadows: true,
+            }"
+            (swipe)="onSlideNextTransition($event, false)">
+            <swiper-slide>
+                <app-swiper-card [styleCard]="'invisible'"></app-swiper-card>
+            </swiper-slide>
+            <swiper-slide *ngFor="let option of options">
+                <app-swiper-card [styleCard]="'visible'" [imageSrc]="option.imageSrc" [title]="option.title"></app-swiper-card>
+            </swiper-slide>
+            <swiper-slide>
+                <app-swiper-card [styleCard]="'finish'"></app-swiper-card>
+            </swiper-slide>
         </swiper-container>
     </div>
 </ion-content>

@@ -1,3 +1,7 @@
+.swiper-card-container {
+    height: 100%;
+}
+
 .app-swiper-card {
     position: relative;
     height: 100%;
@@ -47,5 +51,16 @@
                 --color: var(--ion-color-light);
             }
         }
+    }
+}
+
+.app-invisible-card {
+    background: transparent !important;
+    box-shadow: none !important;
+    img {
+       display: none !important;
+    }
+    .app-card-info {
+        background: transparent !important;
     }
 }

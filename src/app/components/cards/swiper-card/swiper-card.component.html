@@ -1,6 +1,6 @@
 <div class="swiper-card-container">
   <div class="app-swiper-card">
-    <ion-card>
+    <ion-card [class]="(styleCard==='invisible' ? 'app-invisible-card' : '')">
       <img [src]="imageSrc" alt="card image" />
       <div class="app-card-info">
         <div class="app-swiper-card-title">
